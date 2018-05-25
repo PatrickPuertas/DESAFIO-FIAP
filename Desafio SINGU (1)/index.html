@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Patrick Puertas">
+    <meta name="description" content="DESAFIO FIAP">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="Imagens/singu_faveicon.png">
+    <title>Projeto SINGU</title>
+  </head>
+  <body>
+    <div id="simpleModal" class="modal">
+      <div class="modal-content">
+        <div class="inside_modal" id="editar_modal">
+          <h2 id="h2_modal">Editar Voucher</h2>
+        </div>
+          <div class="inside_modal" id="codigo_modal">
+            <h4>CÓDIGO</h4>
+            <input type="text" name="cd_modal" placeholder="Insira o código">
+          </div>
+          <div class="inside_modal" id="valor_modal">
+            <h4>VALOR</h4>
+            <input type="text" name="vl_modal" placeholder="Insira o valor">
+          </div>
+          <div class="inside_modal" id="campanha_modal">
+            <h4>CAMPANHA</h4>
+            <input type="text" name="campanha_modal" placeholder="Insira a campanha">
+          </div>
+          <div class="inside_modal" id="inicio_modal">
+            <h4>INÍCIO</h4>
+            <input type="text" name="inicio_modal" placeholder="Insira o início">
+          </div>
+          <div class="inside_modal" id="fim_modal">
+            <h4>FIM</h4>
+            <input type="date" name="fim_modal">
+          </div>
+          <div class="inside_modal" id="max_modal">
+            <h4>MÁX</h4>
+            <input type="text" name="max_modal" placeholder="Insira o máximo">
+          </div>
+          <div class="inside_modal" id="qtde_modal">
+            <h4>QTDE UTILIDADE</h4>
+            <input type="text" name="qtde_modal" placeholder="Insira a Qtde utilizada">
+          </div>
+            <button type="button" name="closeBtn" id="closeBtn">Cancelar</button>
+            <button type="button" name="save_close" id="save_close" onclick="closeModal()">Salvar e Fechar</button>
+      </div>
+    </div>
+    <header>
+      <div id="Header"> <img src="Imagens/singu_logo.png" alt="Logo" id="logo"> </div>
+      <div id="Voucher">
+        <h1>Vouchers</h1>
+      </div>
+    </header>
+    <nav>
+      <br>
+      <div>
+        <input type="text" name="Filters" id="Filters" placeholder="Filters Results">
+      </div>
+        <br>
+      <div>
+        <button id="Settings" type="button" name="Settings">Settings</button>
+      </div>
+    </nav>
+      <br>
+      <section>
+        <table cellspacing="0">
+          <tr>
+            <th>Código</th>
+            <th>Campanha</th>
+            <th>Início</th>
+            <th>Fim</th>
+            <th>Max</th>
+            <th>Qtde utilizada</th>
+            <th>Valor</th>
+            <th>Ações</th>
+          </tr>
+          <tr>
+            <td>ManicureJuliana</td>
+            <td>Manicure</td>
+            <td>15/07/2018</td>
+            <td>15/07/2019</td>
+            <td>15</td>
+            <td>10</td>
+            <td>R$ 25,00</td>
+            <td class="td" id="td"> <button type="button" name="editar" id="Editar" class="Editar">&#9998; Editar</button><br><br> <button type="button" name="excluir" id="Excluir">Excluir</button> </td>
+          </tr>
+          <tr>
+            <td>CabeloRita</td>
+            <td>Cabelo</td>
+            <td>26/08/2018</td>
+            <td>26/08/2019</td>
+            <td>7</td>
+            <td>4</td>
+            <td>R$ 76,00</td>
+            <td class="td" id="td"> <button type="button" name="editar" id="Editar" class="Editar">&#9998; Editar</button><br><br> <button type="button" name="excluir" id="Excluir">Excluir</button> </td>
+          </tr>
+          <tr>
+            <td>MassagemGleise</td>
+            <td>Massagem</td>
+            <td>16/10/2018</td>
+            <td>16/10/2019</td>
+            <td>10</td>
+            <td>2</td>
+            <td>R$159,00</td>
+            <td class="td" id="td"> <button type="button" name="editar" id="Editar" class="Editar">&#9998; Editar</button><br><br> <button type="button" name="excluir" id="Excluir">Excluir</button> </td>
+          </tr>
+        </table>
+      </section>
+          <br>
+            <footer>
+              <div>
+                <select id="Select" class="Select" name="Select">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+              </div>
+                <br>
+              <button id="Next" type="button" name="Next">Next</button>
+            </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
